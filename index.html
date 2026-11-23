@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>رحّال للسياحة والسفر</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #17243a;
+}
+
+header {
+    background: #0b1930;
+    color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #e6bd65;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+.hero {
+    min-height: 500px;
+    background:
+    linear-gradient(rgba(5,15,30,.65),rgba(5,15,30,.5)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #e6bd65;
+    color: #0b1930;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+section {
+    padding: 55px 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #0b1930;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #0001;
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #0b1930;
+}
+
+.card p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.services {
+    background: #0b1930;
+    color: white;
+}
+
+.services .title {
+    color: #e6bd65;
+}
+
+.service {
+    background: #172b49;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.service h3 {
+    color: #e6bd65;
+    margin-bottom: 15px;
+}
+
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.booking {
+    background: white;
+    max-width: 550px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0001;
+}
+
+.booking input,
+.booking select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.booking button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    background: #071222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">✈ رحّال</div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#trips">الرحلات</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#about">من نحن</a>
+        <a href="#booking">الحجز</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h1>اكتشف العالم مع رحّال</h1>
+        <p>أماكن جديدة .. ذكريات لا تُنسى</p>
+        <a href="#trips" class="btn">اكتشف رحلاتنا</a>
+    </div>
+</div>
+
+<section id="trips">
+    <h2 class="title">وجهاتنا المميزة 🌍</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c">
+            <div class="card-content">
+                <h3>دبي 🇦🇪</h3>
+                <p>استمتع بالفخامة والتسوق وأجمل الأماكن.</p>
+                <a href="#booking" class="btn">احجز الآن</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526241204217-6b0c9b4e6c36">
+            <div class="card-content">
+                <h3>تركيا 🇹🇷</h3>
+                <p>طبيعة ساحرة وتجارب سياحية مميزة.</p>
+                <a href="#booking" class="btn">احجز الآن</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <div class="card-content">
+                <h3>المالديف 🇲🇻</h3>
+                <p>استرخاء وشواطئ ساحرة وأجواء رومانسية.</p>
+                <a href="#booking" class="btn">احجز الآن</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
+            <div class="card-content">
+                <h3>باريس 🇫🇷</h3>
+                <p>عش أجواء مدينة الحب والجمال.</p>
+                <a href="#booking" class="btn">احجز الآن</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="title">خدماتنا</h2>
+
+    <div class="cards">
+
+        <div class="service">
+            <h3>✈ حجز الطيران</h3>
+            <p>حجز رحلات الطيران ومساعدتك في اختيار الأنسب.</p>
+        </div>
+
+        <div class="service">
+            <h3>🏨 الفنادق</h3>
+            <p>خيارات إقامة متنوعة تناسب احتياجاتك.</p>
+        </div>
+
+        <div class="service">
+            <h3>🌍 البرامج السياحية</h3>
+            <p>برامج سياحية متكاملة لأجمل الوجهات.</p>
+        </div>
+
+        <div class="service">
+            <h3>🛂 التأشيرات</h3>
+            <p>مساعدتك في إجراءات السفر والتأشيرات.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">من نحن</h2>
+
+    <div class="about">
+        رحّال للسياحة والسفر، نسعى إلى تقديم تجربة سفر
+        استثنائية تجمع بين الراحة والمتعة والخدمة المميزة.
+        هدفنا أن نجعل كل رحلة بداية لحكاية جميلة،
+        ونساعدك على اكتشاف العالم بأفضل تجربة ممكنة.
+    </div>
+</section>
+
+<section id="booking">
+    <h2 class="title">اطلب رحلتك الآن 📩</h2>
+
+    <div class="booking">
+
+        <form id="form">
+
+            <input id="name" placeholder="الاسم بالكامل" required>
+
+            <input id="phone" type="tel"
+            placeholder="رقم الهاتف" required>
+
+            <select id="destination" required>
+                <option value="">اختر وجهتك</option>
+                <option>دبي</option>
+                <option>تركيا</option>
+                <option>المالديف</option>
+                <option>باريس</option>
+                <option>وجهة أخرى</option>
+            </select>
+
+            <input id="date" type="date" required>
+
+            <input id="people" type="number"
+            min="1" placeholder="عدد المسافرين" required>
+
+            <button class="btn" type="submit">
+                إرسال طلب الحجز عبر واتساب
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <h2>رحّال للسياحة والسفر ✈</h2>
+    <p>رحلتك تبدأ معنا</p>
+    <p>جميع الحقوق محفوظة © 2026</p>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/201110381407"
+target="_blank">☎</a>
+
+<script>
+
+document.getElementById("form").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let destination = document.getElementById("destination").value;
+    let date = document.getElementById("date").value;
+    let people = document.getElementById("people").value;
+
+    let message =
+    "طلب حجز جديد ✈%0A" +
+    "الاسم: " + name + "%0A" +
+    "رقم الهاتف: " + phone + "%0A" +
+    "الوجهة: " + destination + "%0A" +
+    "التاريخ: " + date + "%0A" +
+    "عدد المسافرين: " + people;
+
+    let number = "201110381407";
+
+    window.open(
+        "https://wa.me/" + number + "?text=" + message,
+        "_blank"
+    );
+
+});
+
+</script>
+
+</body>
+</html>
